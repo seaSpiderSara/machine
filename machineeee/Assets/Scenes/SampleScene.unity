@@ -322,7 +322,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12145499}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2770,6 +2770,7 @@ GameObject:
   - component: {fileID: 540446663}
   - component: {fileID: 540446662}
   - component: {fileID: 540446664}
+  - component: {fileID: 540446665}
   m_Layer: 0
   m_Name: Square (20)
   m_TagString: Untagged
@@ -2837,7 +2838,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540446661}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 76.76, y: 48.92, z: 0}
+  m_LocalPosition: {x: 77.2, y: 48.91, z: 0}
   m_LocalScale: {x: 6.2903, y: 0.5643, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2856,15 +2857,34 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!254 &540446665
+RelativeJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540446661}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 12145502}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_MaxForce: 10000
+  m_MaxTorque: 10000
+  m_CorrectionScale: 0.3
+  m_AutoConfigureOffset: 1
+  m_LinearOffset: {x: 3.2000046, y: -0.049999237}
+  m_AngularOffset: 0
 --- !u!1 &545170851
 GameObject:
   m_ObjectHideFlags: 0
