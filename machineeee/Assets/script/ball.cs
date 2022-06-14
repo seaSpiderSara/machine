@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class ball : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+     public KeyCode ButtonSpace = KeyCode.Space;
+     public Rigidbody2D ball_1;
+  //   public gameObject circle_1st;
+
+    //public gameObject FirstBall;
 
     // Update is called once per frame
-    void Update()
+     void Update()
     {
-        
+        if (Input.GetKeyDown(ButtonSpace))
+        {
+            ball_1.gravityScale += 1;
+        }
     }
 }
