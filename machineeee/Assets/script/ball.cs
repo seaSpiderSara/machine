@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class ball : MonoBehaviour
 {
-     public KeyCode ButtonSpace = KeyCode.Space;
+
+    
+    public KeyCode ButtonSpace = KeyCode.Space;
      public Rigidbody2D ball_1;
+
+ 
 
      void Update()
     {
@@ -14,4 +18,6 @@ public class ball : MonoBehaviour
             ball_1.gravityScale += 1;
         }
     }
+
+
 }
